@@ -1,7 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;1,300&family=Oswald&display=swap');
+
+/*Fonts:
+font-family: 'Merriweather', serif;
+font-family: 'Oswald', sans-serif;
+*/
+
+/*Global*/
 body {
-    background-color: pink;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
-ul {
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box; }
+/*Navigation*/
+li > a {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: transparent;
+}
+
+.logo {
+    width: 100px;
+    height: 50px;
+}
+
+.nav-links {
     list-style-type: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0 30px;
+}
+
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+    color: aqua;
+}
+
+/*Splash-Page*/
+.splash{
+    position: relative;
+    height: 100vh;
+    background-image:url('../images/pexels-vlada-karpovich-4452374.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.splash-inner{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+
+.page-title{
+    color: #ffffff;
+    font-size: 50px;
+    font-family: 'Merriweather', serif;
+    font-style: italic;
+    position: relative;
+    margin: 55px 0 0 0;
+}
+
+.page-subtitle {
+    color: #ffffff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 120px;
+}
+
+.splash-btn {
+min-width: 160px;
+padding: 20px 60px;
+border-radius: 5px;
+background-color: #f9ca24;
+color: #fff;
+font-family: 'Oswald', sans-serif;
+font-size: 30px;
+border: none;
 }
