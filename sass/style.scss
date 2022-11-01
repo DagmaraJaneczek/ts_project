@@ -49,7 +49,6 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
-    background-color: transparent;
 }
 
 .logo {
@@ -68,10 +67,11 @@ header{
 
 .nav-links li a {
     transition: all 0.3s ease 0s;
+    color: #fff;
 }
 
 .nav-links li a:hover {
-    color: aqua;
+    color: #f9ca24;
 }
 
 /*Splash-Page*/
@@ -118,6 +118,13 @@ header{
     border: none;
 }
 
+.splash-btn:hover {
+    background-color: #fff;
+    color: #f9ca24;
+    transition: all 0.7s;
+    cursor: pointer;
+}
+
 /*Services*/
 .services{
     margin: 96px;
@@ -132,10 +139,6 @@ header{
 .box{
     flex: 0 0 33.333%;
     line-height: 1.5;
-}
-
-.section-title h3 {
-
 }
 
 .services i {
@@ -169,6 +172,12 @@ header{
     height: 300px;
     width: 100%;
     display: block;
+    object-fit: cover;
+}
+
+.portfolio-box img:hover {
+transform: scale(0.90);
+transition: all 0.5s;
 }
 
 .portfolio .container {
@@ -204,36 +213,36 @@ header{
 /*Footer*/
 
 .footer-section {
-max-width: 1140px;
-margin: 0 auto;
-padding: 30px 20px;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 30px 20px;
 }
 
 .footer-list {
-list-style-type: none;
-display: flex;
-text-align: center;
-padding-left: 0;
+    list-style-type: none;
+    display: flex;
+    text-align: center;
+    padding-left: 0;
 }
 
 .copyright p {
-display: inline-block;
-padding-right: 200px;
+    display: inline-block;
+    padding-right: 200px;
 }
 
 .footer-list a i{
-font-size: 20px;
-background-color: rgb(0,0,0);
-color: #fff;
-width: 40px;
-height: 40px;
-border-radius: 50%;
-line-height: 40px;
-margin: 0 5px;
+    font-size: 20px;
+    background-color: rgb(0,0,0);
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    margin: 0 5px;
 }
 
 .footer-list a i:hover {
-transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 
