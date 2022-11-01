@@ -228,9 +228,15 @@ transition: all 0.5s;
     padding-left: 0;
 }
 
+.copyright i{
+font-size: 15px;
+}
+
 .copyright p {
     display: inline-block;
     padding-right: 200px;
+    font-family: 'Merriweather', serif;
+    font-size: 15px;
 }
 
 .footer-list a i{
