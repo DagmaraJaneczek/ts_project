@@ -19,6 +19,19 @@ body {
     padding: 0 20px;
 }
 
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    line-height: 0.5;
+}
+
+h3 {
+    font-family: 'Merriweather', serif;
+    font-style: italic;
+    color: #bdc3c7;
+    font-weight: 300;
+}
+
 *, *::before, *::after {
     box-sizing: border-box; }
 /*Navigation*/
@@ -93,12 +106,32 @@ header{
 }
 
 .splash-btn {
-min-width: 160px;
-padding: 20px 60px;
-border-radius: 5px;
-background-color: #f9ca24;
-color: #fff;
-font-family: 'Oswald', sans-serif;
-font-size: 30px;
-border: none;
+    min-width: 160px;
+    padding: 20px 60px;
+    border-radius: 5px;
+    background-color: #f9ca24;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    border: none;
+}
+
+/*Services*/
+.services{
+    margin: 96px;
+}
+
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.box{
+    flex: 0 0 33.333%;
+    line-height: 1.5;
+}
+
+.section-title h3 {
+    padding-bottom: 100px;
 }
