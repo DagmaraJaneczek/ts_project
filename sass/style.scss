@@ -33,7 +33,9 @@ h3 {
 }
 
 *, *::before, *::after {
-    box-sizing: border-box; }
+    box-sizing: border-box;
+}
+
 /*Navigation*/
 li > a {
     font-family: 'Oswald', sans-serif;
@@ -135,3 +137,67 @@ header{
 .section-title h3 {
     padding-bottom: 100px;
 }
+
+.services i {
+    font-size: 35px;
+    color: #f9ca24;
+    border: 3px solid #f9ca24;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    line-height: 60px;
+}
+
+.services h2 {
+    font-family: 'Oswald', sans-serif;
+}
+
+.services p {
+    font-family: 'Merriweather', serif;
+    font-size: 15px;
+    color: #7c7a7a;
+}
+
+/*Portfolio*/
+
+.portfolio {
+    background-color: #ecf0f1;
+}
+
+.portfolio-box img {
+    height: 300px;
+    width: 100%;
+    display: block;
+}
+
+.portfolio .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 50px 30px;
+    grid-auto-flow: row;
+  }
+
+.portfolio-box {
+    background-color: #fff;
+}
+
+.portfolio .section-title h1 {
+    padding-top: 100px;
+}
+
+.box-content {
+    line-height: 0.5;
+    padding: 10px;
+}
+
+.box-content h2 {
+    font-family: 'Oswald', sans-serif;
+}
+
+.box-content p {
+    font-family: 'Merriweather', serif;
+    font-style: italic;
+}
+
+
