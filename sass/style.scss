@@ -76,7 +76,7 @@ header{
 }
 
 /*Splash-Page*/
-.splash{
+.splash {
     position: relative;
     height: 100vh;
     background-image:url('../images/pexels-vlada-karpovich-4452374.jpg');
@@ -85,7 +85,7 @@ header{
     background-attachment: fixed;
 }
 
-.splash-inner{
+.splash-inner {
     position: absolute;
     width: 100%;
     top: 50%;
@@ -93,7 +93,7 @@ header{
     transform: translate(-50%, -50%);
     }
 
-.page-title{
+.page-title {
     color: #fff;
     font-size: 50px;
     font-family: 'Merriweather', serif;
@@ -179,8 +179,8 @@ header{
 }
 
 .portfolio-box img:hover {
-transform: scale(0.90);
-transition: all 0.5s;
+    transform: scale(0.90);
+    transition: all 0.5s;
 }
 
 .portfolio .container {
@@ -229,7 +229,7 @@ transition: all 0.5s;
 }
 
 .copyright i{
-font-size: 15px;
+    font-size: 15px;
 }
 
 .copyright p {
@@ -254,4 +254,93 @@ font-size: 15px;
     transform: scale(1.2);
 }
 
+.footer-icon p {
+    font-size: 0;
+}
 
+/*Media queries*/
+
+@media(max-width: 767px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 15px 20px;
+    }
+
+    .logo {
+        display: block;
+
+    }
+
+    li > a {
+        font-size: 12px;
+    }
+
+    .nav-links {
+        padding-left: 5px;
+    }
+
+    .nav-links li{
+        padding: 0 5px;
+    }
+
+    .page-title {
+        font-size: 20px;
+    }
+
+    .page-subtitle {
+        font-size: 50px;
+        margin: 100px 0;
+    }
+
+    .splash-btn {
+        padding: 10px 30px;
+        border-radius: 5px;
+        font-size: 20px;
+    }
+
+    .services {
+        margin: 20px;
+    }
+
+    .services i {
+        font-size: 20px;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        line-height: 45px;
+    }
+
+    .portfolio .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 15px 20px;
+    }
+
+    .copyright p {
+    padding-right: 5px;
+    font-size: 10px;
+    }
+
+    .copyright i {
+    font-size: 10px;
+    }
+
+    .footer-list a i{
+        font-size: 10px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        line-height: 30px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h3 {
+        font-size: 15px;
+    }
+}
