@@ -6,6 +6,12 @@ font-family: 'Oswald', sans-serif;
 */
 
 /*Global*/
+
+$color-main: #f9ca24;
+$accent-color: #bdc3c7;
+$font-text:'Merriweather', serif;
+$font-header:'Oswald', sans-serif;
+
 body {
     box-sizing: border-box;
     margin: 0;
@@ -20,15 +26,15 @@ body {
 }
 
 h1 {
-    font-family: 'Oswald', sans-serif;
+    font-family: $font-header;
     font-size: 50px;
     line-height: 0.5;
 }
 
 h3 {
-    font-family: 'Merriweather', serif;
+    font-family: $font-text;
     font-style: italic;
-    color: #bdc3c7;
+    color: $accent-color;
     font-weight: 300;
 }
 
@@ -38,7 +44,7 @@ h3 {
 
 /*Navigation*/
 li > a {
-    font-family: 'Oswald', sans-serif;
+    font-family: $font-header;
     font-weight: 500;
     font-size: 16px;
     text-decoration: none;
@@ -72,7 +78,7 @@ header{
 }
 
 .nav-links li a:hover {
-    color: #f9ca24;
+    color: $color-main;
 }
 
 /*Splash-Page*/
@@ -96,7 +102,7 @@ header{
 .page-title {
     color: #fff;
     font-size: 50px;
-    font-family: 'Merriweather', serif;
+    font-family: $font-text;
     font-style: italic;
     position: relative;
     margin: 55px 0 0 0;
@@ -105,7 +111,7 @@ header{
 
 .page-subtitle {
     color: #fff;
-    font-family: 'Oswald', sans-serif;
+    font-family: $font-header;
     font-size: 120px;
     text-shadow:0px 3px 10px #000;
 }
@@ -114,16 +120,16 @@ header{
     min-width: 160px;
     padding: 20px 60px;
     border-radius: 5px;
-    background-color: #f9ca24;
+    background-color: $color-main;
     color: #fff;
-    font-family: 'Oswald', sans-serif;
+    font-family: $font-header;
     font-size: 30px;
     border: none;
 }
 
 .splash-btn:hover {
     background-color: #fff;
-    color: #f9ca24;
+    color: $color-main;
     transition: all 0.7s;
     cursor: pointer;
 }
@@ -146,8 +152,8 @@ header{
 
 .services i {
     font-size: 35px;
-    color: #f9ca24;
-    border: 3px solid #f9ca24;
+    color: $color-main;
+    border: 3px solid $color-main;
     height: 70px;
     width: 70px;
     border-radius: 50%;
@@ -155,11 +161,11 @@ header{
 }
 
 .services h2 {
-    font-family: 'Oswald', sans-serif;
+    font-family: $font-header;
 }
 
 .services p {
-    font-family: 'Merriweather', serif;
+    font-family: $font-text;
     font-size: 15px;
     color: #7c7a7a;
 }
@@ -205,11 +211,11 @@ header{
 }
 
 .box-content h2 {
-    font-family: 'Oswald', sans-serif;
+    font-family: $font-header;
 }
 
 .box-content p {
-    font-family: 'Merriweather', serif;
+    font-family: $font-text;
     font-style: italic;
 }
 
@@ -235,7 +241,7 @@ header{
 .copyright p {
     display: inline-block;
     padding-right: 200px;
-    font-family: 'Merriweather', serif;
+    font-family: $font-text;
     font-size: 15px;
 }
 
@@ -320,12 +326,12 @@ header{
     }
 
     .copyright p {
-    padding-right: 5px;
-    font-size: 10px;
+        padding-right: 5px;
+        font-size: 10px;
     }
 
     .copyright i {
-    font-size: 10px;
+        font-size: 10px;
     }
 
     .footer-list a i{
